@@ -1,0 +1,34 @@
+### Test GET /contacts
+GET http://localhost:3000/personaldata
+Content-Type: application/json
+
+### Test POST /contacts (if you have a POST route)
+POST http://localhost:3000/personaldata
+Content-Type: application/json
+
+{
+    "_id": "66023da180e35e91dc13re12e",
+  "name": "Smart Watch",
+  "price": 129.99,
+  "category": "Accessories",
+  "description": "A smart watch with fitness tracking capabilities.",
+  "quantity": 20,
+  "inStock": true
+}
+
+### PUT: Update an existing contact
+PUT http://localhost:3000/personaldata/67013da180e35e90cd07ce3c
+Content-Type: application/json
+
+{
+  "_id": "67013da180e35e90cd07ce3c",
+  "name": "Sensor Camera",
+  "price": 130.99,
+  "category": "Accessories",
+  "description": "A smart camera to detect movements tracking capabilities.",
+  "quantity": 10,
+  "inStock": true
+}
+
+### DELETE: Remove a contact
+DELETE http://localhost:3000/personaldata/67013da180e35e90cd07ce3c
