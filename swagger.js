@@ -15,7 +15,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'https:netlify.com', //replace with service link
+        url: 'https://app-data-update.netlify.app/', //replace with service link
         description: 'Production Server',
       },
       {

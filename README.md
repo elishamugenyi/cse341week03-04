@@ -1,5 +1,9 @@
 # cse341week03-04
 Node.js project that operates CRUD on a mongodb
+## After creating project directory
+- run npm init --y to install package-json file
+- npm install --save-dev dotenv to install dependencies, plus others.
+-
 
 ## Documentation for the Routes/APIs.
 
