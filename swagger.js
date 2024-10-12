@@ -6,18 +6,18 @@ const swaggerOptions = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Personal Data API',
+      title: 'Electronics Collection API',
       version: '1.0.0',
-      description: 'API documentation for the Personal Data collection',
+      description: 'API documentation for the Item collection',
       contact: {
         name: 'Your Name',
       },
     },
     servers: [
-      {
-        url: 'https://app-data-update.netlify.app/', //replace with service link
+      /*{
+        url: 'https://app-data-update.netlify.app/', //site url is not working well. still building it
         description: 'Production Server',
-      },
+      },*/
       {
         url: 'http://localhost:3000',
         description: 'Local server',
@@ -25,7 +25,7 @@ const swaggerOptions = {
     ],
     components: {
         schemas: {
-          PersonalData: {
+          ItemData: {
             type: 'object',
             properties: {
               _id: {
@@ -62,7 +62,7 @@ const swaggerOptions = {
       },
     },
   },
-  apis: ['./routes/*.js', './models/*.js'], // Path to the API docs
+  apis: ['./routes/*.js' /*,'./models/*.js'*/], // Path to the API docs
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
